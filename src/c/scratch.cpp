@@ -11,7 +11,7 @@ class Animal
 		Animal(string n, int a)
 		{
 			name = n;
-			setAge(a);
+			age = a;
 		}
 		int getAge()
 		{
@@ -30,6 +30,8 @@ class Animal
 int main()
 {
 	Animal dog("daisy", 12);
+	dog.getInfo();
+	dog.setAge(15);
 	dog.getInfo();
 	return 0;
 };
