@@ -70,9 +70,12 @@ struct _thing
 	float rate;
 };
 
+// ******************************************
 typedef void* (fnptr) (struct _thing* aThing);
 typedef void* (fnp) (int a);
 typedef void* (funcptr) (container* cont);
+// ******************************************
+
 
 void thingOperation(struct _thing* something)
 {

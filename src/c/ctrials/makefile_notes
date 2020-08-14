@@ -1,0 +1,8 @@
+mymain: mymain.c mylib.c
+     gcc -o mybinary mymain.c mylib.c -I.
+     
+CC=gcc
+CFLAGS=-I.
+
+mymain: mymain.o mylib.o
+     $(CC) -o mybinary mymain.o mylib.o
